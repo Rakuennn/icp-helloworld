@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "easy-cycle-backend": {
+      "main": "src/easy-cycle-backend/main.mo",
+      "type": "motoko"
+    },
+    "easy-cycle-frontend": {
+      "dependencies": [
+        "easy-cycle-backend"
+      ],
+      "source": [
+        "src/easy-cycle-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "easy-cycle-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
